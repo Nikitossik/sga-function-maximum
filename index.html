@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Genetic Algorythm</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 class="title">Simple Genetic Algorythm</h1>
+        <form action="#" class="form" id="equation-form">
+            <div class="form-equation">
+                <div class=""></div>
+                <input type="number" name="param-a" placeholder="A" min="-100" max="100"
+                    class="form-equation__input input"><span>X<sup>2</sup></span> +
+                <input type="number" name="param-b" placeholder="B" min="-100" max="100"
+                    class="form-equation__input input"><span>X</span> + <input type="number" name="param-c"
+                    placeholder="C" min="-100" max="100" class="form-equation__input input"> = 0
+            </div>
+            <p class="form-equation__error">Please provide all parameters</p>
+            <button type="submit" class="button">Get file</button>
+        </form>
+    </div>
+    <script src="./js/user-interface.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

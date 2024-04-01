@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg: #e3eaff;
+  --primary-color: #608aff;
+  --title-color: #4f74dc;
+  --error-color: #eb4c42;
+}
+
+input,
+button {
+  font-size: inherit;
+  border-radius: 0.5rem;
+  border: 3px solid #9fb9ff;
+  transition: 0.3s all ease;
+}
+
+input::placeholder {
+  color: #9aa5c5;
+}
+
+input:focus,
+button:focus {
+  outline: 4px solid #d5e0ff;
+  outline-offset: 2px;
+}
+
+.button {
+  font-size: 1.125rem;
+  padding: 0.5rem 1rem;
+  background: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.button:hover {
+  background: #9fb9ff;
+}
+
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+  background-color: var(--main-bg);
+}
+
+.wrapper {
+  padding: 6rem 1rem 1rem;
+  margin: 0 auto;
+  max-width: 56rem;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: var(--title-color);
+}
+
+.form {
+  padding: 2rem;
+  background: #fff;
+  border-radius: 0.5rem;
+}
+
+.form-equation {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.form-equation__input {
+  max-width: 3em;
+  padding: 0.25rem 0 0.25rem 1rem;
+  color: var(--primary-color);
+}
+
+.form-equation__input + span {
+  margin-left: 0.2em;
+}
+
+.form-equation__error {
+  color: var(--error-color);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s opacity ease;
+}
+
+.form-equation--error .form-equation__error {
+  opacity: 1;
+  visibility: visible;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 2.125rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .form-equation {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .button {
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+    margin-bottom: 1.125rem;
+  }
+
+  .form-equation {
+    font-size: 1.125rem;
+  }
+}
